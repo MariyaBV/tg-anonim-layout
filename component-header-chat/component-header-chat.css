@@ -1,0 +1,25 @@
+.block-header-chat {
+    box-shadow: 0px 1.33px 2.34px 0px #0000002B;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 9px 6px 9px;
+    margin-top: 4px;
+}
+
+.block-header-chat button {
+    border: none;
+    background: transparent;
+}
+
+.block-header-chat .block-title {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.block-header-chat .members {
+    color: var(--text-light-grey);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}

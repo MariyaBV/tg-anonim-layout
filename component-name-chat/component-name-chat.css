@@ -1,0 +1,8 @@
+.block-name-chat {
+    background-color: var(--white);
+    padding: 12px 24px 24px 24px;
+    box-shadow: 0px 1px 2px 0px #0000001A;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+}

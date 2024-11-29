@@ -1,0 +1,13 @@
+.blue-button {
+    position: absolute;
+    bottom: 33px;
+    right: 14px;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}

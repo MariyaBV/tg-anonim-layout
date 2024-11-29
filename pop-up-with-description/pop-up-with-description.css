@@ -1,0 +1,30 @@
+.pop-up-with-description {
+    background: #72839199;
+    max-width: 226px;
+    border-radius: 10px;
+    padding: 13px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--white);
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    z-index: 1;
+    width: 100%;
+}
+
+.pop-up-with-description .title {
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.pop-up-with-description .list {
+    padding: 0 0 0 22px;
+    margin: 0;
+}
+
+.pop-up-with-description .list li {
+    line-height: 18px;
+}

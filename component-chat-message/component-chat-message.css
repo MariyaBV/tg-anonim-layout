@@ -1,0 +1,69 @@
+.other-message,
+.my-message {
+    display: flex;
+    gap: 11px;
+    margin-bottom: 8px;
+}
+
+.other-message .avatar,
+.my-message .avatar {
+    width: 35px;
+    height: 35px;
+}
+
+.my-message .avatar {
+    opacity: 0;
+}
+
+.other-message .chat-message {
+    border-radius: 5px 9px 9px 0px;
+    background-color: var(--white);
+    padding: 5px 10px 12px 8px;
+    position: relative;
+}
+
+.other-message .chat-message::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -6px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 16px 0 0;
+    border-color: transparent var(--white) transparent transparent;
+}
+
+.other-message .chat-message .time {
+    color: #A1AAB3;
+}
+
+.other-message .chat-message .nick {
+    color: #C9564F;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-bottom: 5px;
+}
+
+.my-message .chat-message {
+    border-radius: 9px 5px 5px 9px;
+    background-color: var(--light-green);
+    padding: 5px 10px 12px 8px;
+    position: relative;
+}
+
+.chat-message .time {
+    position: absolute;
+    bottom: 0;
+    right: 6px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: var(--dark-green);
+}
+
+.my-message .chat-message img {
+    vertical-align: bottom;
+    margin-left: 2px;
+}

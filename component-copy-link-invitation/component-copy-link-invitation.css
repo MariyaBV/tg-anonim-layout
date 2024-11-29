@@ -1,0 +1,23 @@
+.block-copy-link-invitation {
+    box-shadow: 0px 1.33px 2.34px 0px #0000002B;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6.5px 0;
+    position: relative;
+}
+
+.block-copy-link-invitation .title {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--dark-blue);
+}
+
+.block-copy-link-invitation button {
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 5px;
+}

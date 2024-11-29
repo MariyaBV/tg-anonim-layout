@@ -1,0 +1,41 @@
+.list-item-chat {
+    display: flex;
+    background-color: var(--white);
+    padding: 10px 0 9px 10px;
+    gap: 11px;
+}
+
+.list-item-chat .block-title {
+    flex: 1;
+    border-bottom: 0.35px solid #D9D9D9;
+}
+
+.list-item-chat .block-title .title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: var(--dark-black);
+}
+
+.list-item-chat .block-title .member-nick {
+    font-size: 14.78px;
+    font-weight: 500;
+    line-height: 17.32px;
+    color: var(--very-light-black);
+}
+
+.list-item-chat .block-title .last-message {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--text-dark-grey);
+}
+
+.list-item-chat .time {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #95999A;
+    position: absolute;
+    right: 13px;
+}

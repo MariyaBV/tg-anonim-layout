@@ -1,0 +1,93 @@
+.block-link-invitation {
+    background-color: var(--white);
+    padding: 12px 24px 24px 24px;
+    box-shadow: 0px 1px 2px 0px #0000001A;
+    display: flex;
+    flex-direction: column;
+}
+
+.block-link-invitation .title {
+    color: var(--light-blue);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 0 0 12px 0;
+}
+
+.block-link-invitation .block-radio {
+    padding: 10px 0;
+}
+
+.block-link-invitation .button {
+    margin-top: 14px;
+}
+
+.block-link-invitation .link-invitation {
+    border: 1.8px solid #0000000D;
+    border-radius: var(--border-radius);
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.block-link-invitation .refresh {
+    border: none;
+    background-color: transparent;
+}
+
+.block-link-invitation .on-off {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.block-link-invitation .on-off .text p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0;
+}
+
+.block-link-invitation .on-off .text span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: var(--text-grey);
+}
+.block-link-invitation .on-off .checkbox {
+    position: relative;
+}
+
+.block-link-invitation .on-off .checkbox input {
+    width: 32px;
+    height: 13px;
+    background-color: var(--radio-grey);
+    border: none;
+    appearance: none;
+    border-radius: 50px;
+}
+
+.block-link-invitation .on-off .checkbox label {
+    border: 2px solid var(--radio-grey);
+    background-color: var(--white);
+    left: 2px;
+    top: 0;
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    transition: all 0.5s ease;
+}
+
+.block-link-invitation .on-off .checkbox input:checked {
+    background-color: var(--very-light-blue);
+}
+
+.block-link-invitation .on-off .checkbox input:checked + label {
+    border: 2px solid var(--very-light-blue);
+    left: 18px;
+}

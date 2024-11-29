@@ -1,0 +1,29 @@
+.header-members-list {
+    box-shadow: 0px 1.33px 2.34px 0px #0000002B;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 24px;
+    margin-bottom: 12px;
+}
+
+.header-members-list .members {
+    color: var(--text-light-grey);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.header-members-list .title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: var(--dark-black);
+}
+
+.header-members-list .avatar {
+    max-width: 78px;
+    max-height: 78px;
+    width: 100%;
+    height: 100%;
+}

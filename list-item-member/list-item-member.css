@@ -1,0 +1,35 @@
+.list-item-member {
+    display: flex;
+    background-color: var(--white);
+    padding: 12px 24px;
+    gap: 11px;
+}
+
+.list-item-member.owner .owner {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--link-blue);
+}
+
+.list-item-member .block-title {
+    border-bottom: 0.35px solid #D9D9D9;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+}
+
+.list-item-member .block-title .member-nick {
+    font-size: 14.78px;
+    font-weight: 500;
+    line-height: 17.32px;
+    color: var(--very-light-black);
+}
+
+.list-item-member img.avatar {
+    max-width: 35px;
+    max-height: 35px;
+    height: 100%;
+    width: 100%;
+}

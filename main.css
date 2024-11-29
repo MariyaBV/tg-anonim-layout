@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+p {
+  margin: 0;
+}
+
+:root {
+  --black: #000;
+  --light-black: #0000000D;
+  --very-light-black: #434449;
+  --dark-black: #222222;
+  --white: #fff;
+  --very-light-blue: #51AEE7;
+  --light-blue: #50A7EA;
+  --blue: #3BA9EC;
+  --link-blue: #007AFF;
+  --dark-blue: #3290EC;
+  --background: #EFEFF4;
+  --text-dark-grey: #707579;
+  --grey: #838383;
+  --text-dark-grey: #8D8E90;
+  --text-grey: #83868B;
+  --text-light-grey: #9A9A9A;
+  --light-grey-text: #A1AAB3;
+  --background-grey: #72839199;
+  --radio-grey: #B6B6B7;
+  --very-dark-grey: #868686;
+  --light-green: #EFFEDD;
+  --dark-green: #62AC55;
+  --green: #60C255;
+  --red: #C9564F;
+
+  --border-radius-big: 20px;
+  --border-radius-little: 7px;
+  --border-radius: 14px;
+  --border-radius-medium: 16px;
+}
+
+
+body {
+  max-width: 460px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--black);
+  position: relative;
+  max-height: 100%;
+  background-color: var(--background);
+}
+
+body.chat {
+  background-image: url("/img/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 460px) {
+  body {
+    width: 100%;
+  }
+}
+
+input[type="text"],
+label,
+textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--black);
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid var(--grey);
+  padding: 8.5px 8px;
+}
+
+input[type="text"]:focus-visible,
+textarea:focus-visible {
+  outline: none;
+}
+
+input[type="radio"] {
+  width: 19px;
+  height: 19px;
+  margin: 0;
+  vertical-align: sub;
+  margin-right: 5px;
+  appearance: none;
+  border: 2px solid var(--radio-grey);
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  appearance: auto;
+  accent-color: dodgerblue;
+}
+
+input[type="radio"]:focus {
+  outline: none;
+}
+
+.button {
+  color: var(--white);
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button-little {
+  background-color: var(--very-light-blue);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.15000000596046448px;
+  border-radius: var(--border-radius-big);
+  max-width: 113px;
+  padding: 8px 0;
+  width: 100%;
+}
+
+.button-long {
+  padding: 12px 0;
+  width: 100%;
+  background-color: var(--light-blue);
+  border-radius: var(--border-radius-little);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.button-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  justify-content: center;
+  padding: 6.5px 0;
+}
