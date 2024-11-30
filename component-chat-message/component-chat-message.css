@@ -3,6 +3,7 @@
     display: flex;
     gap: 11px;
     margin-bottom: 8px;
+    align-items: flex-end;
 }
 
 .other-message .avatar,

@@ -50,8 +50,19 @@ p {
   --border-radius-medium: 16px;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  display: none;
+}
 
-body {
+body,
+#app {
   max-width: 460px;
   width: 100%;
   height: 100vh;
@@ -67,7 +78,8 @@ body {
   background-color: var(--background);
 }
 
-body.chat {
+body.chat,
+#app.chat {
   background-image: url("/img/background.png");
   background-size: cover;
   background-position: center;
@@ -75,7 +87,8 @@ body.chat {
 }
 
 @media (max-width: 460px) {
-  body {
+  body,
+  #app  {
     width: 100%;
   }
 }
@@ -157,4 +170,23 @@ input[type="radio"]:focus {
   gap: 7px;
   justify-content: center;
   padding: 6.5px 0;
+}
+
+button.accept {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 17px 0;
+  background-color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow: 0px -0.67px 2px 0px #00000021;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 15px;
+  color: var(--white);
 }
